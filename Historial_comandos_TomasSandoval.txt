@@ -1,0 +1,68 @@
+sudo apt install bzip2 tar -y
+sudo apt update
+sudo apt upGRADE
+sudo apt upgrade
+git --version
+sudo apt install git --y
+sudo apt install git -y
+ssh-keygen
+cat $HOME/.ssh/*.pub
+cd
+mkdir repogit
+cd repogit
+ls -la $HOME/.ssh/
+cd
+ls -la $HOME/.ssh/
+e97765@arqyso-311:~$ ls -la $HOME/.ssh/
+total 16
+drwx------  2 e97765 e97765 4096 Sep 27 22:10 .
+drwxr-x--- 16 e97765 e97765 4096 Sep 27 22:21 ..
+-rw-------  1 e97765 e97765    0 Sep 27 22:05 authorized_keys
+-rw-------  1 e97765 e97765  411 Sep 27 22:10 id_ed25519
+-rw-r--r--  1 e97765 e97765   99 Sep 27 22:10 id_ed25519.pub
+e97765@arqyso-311:~$ ^C
+ssh -T git@github.com
+cd repogit
+git clone https://github.com/TomySand/TP_AySO.git
+cd $HOME/repogit
+ls
+rm -rf TP_AySOrm -rf TP_AySO
+rm -rf TP_AySO
+ls
+git clone git@github.com:TomySand/TP_AySO.git
+cd t
+cd TP_AySO/
+pwd
+ls -l
+cat /etc/os-release
+man grep
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+grep -i home_url /etc/os-release
+whoami
+id -un
+echo "Usuario=$(whoami)" > datos_usuario.txt
+cat datos_usuario.txt
+ls
+git add .
+git config --global user.email "tomassandoval116@gmail.com"
+git config --global user.name "TomySand"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+git push
+rep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+git add .
+git commit -m "feat: Añadiendo información de CPU"
+git push
+cat <<EOF>> README.md
+Alumno: Tomás Sandoval
+División: 311
+Turno: Noche
+EOF
+
+cat README.md
+git add README.md datos_usuario.txt
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+history -a
